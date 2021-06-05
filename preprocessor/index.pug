@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title CalculatorUI
+    body
+        div.container
+            .container__screen
+                each val in [5, 4, 3, 2, 1]
+                    p(class='container__screen--result'+val)= 0
+                h1.container__screen--total = 0
+            table.container_keyboard
+                tr.container_keyboard--row
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 'c'
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '<='
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '/'
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 'x'
+                tr.container_keyboard--row
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 7
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 8
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 9
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '-'
+                tr.container_keyboard--row
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 4
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 5
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 6
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '+'
+                tr.container_keyboard--row
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 1
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 2
+                    td.container_keyboard--td
+                        button.container_keyboard--button= 3
+                    td(class='.container_keyboard--td' rowspan="2")
+                        button.container_keyboard--button= '='
+                tr.container_keyboard--row
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '%'
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '0'
+                    td.container_keyboard--td
+                        button.container_keyboard--button= '.'
