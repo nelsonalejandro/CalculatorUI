@@ -4,7 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title CalculatorUI
+        link(rel="stylesheet", href="css/style.css")
+        title Calculator-UI
     body
         div.container
             .container__screen
@@ -16,12 +17,28 @@ html(lang="en")
                     tr(class=classRow)
                         each value in array 
                             if value == '='
-                                td(class= classTableData, rowspan="2")
-                                    button(class=classButton)= value
+                                td(class= classTableData, rowspan="2" id="equals__td")
+                                    button(class=classButton id="equals")= value
                             else
-                                td.container_keyboard--td
-                                    button(class=classButton)= value
-                +row(['c', '<=', '/','x'])
+                                if value == '/'
+                                     td.container_keyboard--td
+                                        button(class=classButton id="split")= value
+                                else if value == '-'
+                                    td.container_keyboard--td
+                                        button(class=classButton id="subtraction")= value
+                                else if value == '+'
+                                    td.container_keyboard--td
+                                        button(class=classButton id="sum")= value
+                                else if value == '%'
+                                    td.container_keyboard--td
+                                        button(class=classButton id="percent")= value
+                                else if value == '.'
+                                    td.container_keyboard--td
+                                        button(class=classButton id="dot")= value
+                                else
+                                    td.container_keyboard--td
+                                        button(class=classButton id=value)= value
+                +row(['C', 'D', '/','X'])
                 +row(['7', '8', '9','-'])
                 +row(['4', '5', '6','+'])
                 +row(['1','2','3','='])

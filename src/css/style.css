@@ -1,0 +1,90 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+}
+
+body {
+  background-color: #3F4556;
+}
+
+.container {
+  max-width: 414px;
+  min-width: 414px;
+  max-height: 896px;
+  min-height: 896px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border: 1px solid #B6B6B6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.container__screen {
+  max-width: 370px;
+  min-width: 370px;
+  max-height: 300px;
+  min-height: 300px;
+  background-color: #E5E5E5;
+  border-radius: 25px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.25);
+}
+.container__screen h4 {
+  color: #B6B6B6;
+  margin: 15px 20px;
+}
+.container__screen h1 {
+  color: #3F4556;
+  margin: 15px 20px;
+}
+
+.container_keyboard {
+  max-width: 370px;
+  min-width: 370px;
+  max-height: 570px;
+  min-height: 570px;
+  margin-top: 10px;
+}
+.container_keyboard .container_keyboard--row .container_keyboard--td {
+  width: 50px;
+}
+.container_keyboard .container_keyboard--row .container_keyboard--button {
+  min-width: -webkit-fill-available;
+  font-size: xxx-large;
+  height: 85px;
+  border-radius: 50px;
+  background-color: #3F4556;
+  color: #fff;
+  margin: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#equals__td {
+  background-color: #FF806E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+#equals {
+  box-shadow: none;
+  background-color: #FF806E;
+}
+
+#C {
+  background-color: #FF806E;
+}
+
+#D, #split, #X, #subtraction, #sum, #percent, #dot {
+  color: #FF806E;
+}
