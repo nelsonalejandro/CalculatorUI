@@ -3,3 +3,17 @@ $base__color2: #3F4556;
 $base__color3: #FF806E;
 $screen-color: #B6B6B6;
 
+*{
+    margin: 0 auto;
+    padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+}
+body {
+    background-color: $base__color2;
+}
